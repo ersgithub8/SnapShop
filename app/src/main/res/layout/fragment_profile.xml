@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:id="@+id/iv_user_profile"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginEnd="70dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/slider_one"
+                android:scaleType="fitXY"/>
+
+            <EditText
+                android:id="@+id/et_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="16sp"
+                android:text="Muhammah Mohsin"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textColor="#6D6666"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="90dp"
+                android:background="#36CECECE"
+                android:padding="10sp"
+                android:layout_below="@id/iv_user_profile"
+                android:clickable="false"
+                android:layout_marginBottom="10dp"/>
+
+            <ImageButton
+                android:id="@+id/iv_user_name_edit"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="40dp"
+                android:src="@drawable/ic_edit_black_24dp"
+                android:background="#6D6666"
+                android:layout_below="@id/iv_user_profile"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/et_user_number"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="16sp"
+                android:text="Phone numer"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textColor="#6D6666"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="90dp"
+                android:background="#36CECECE"
+                android:padding="10sp"
+                android:layout_below="@id/et_user_name"
+                android:clickable="false"
+                android:layout_marginBottom="10dp"/>
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/iv_user_number_edit"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="40dp"
+                android:src="@drawable/ic_edit_black_24dp"
+                android:background="#6D6666"
+                android:layout_below="@id/et_user_name"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/et_user_email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="16sp"
+                android:text="email"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textColor="#6D6666"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="90dp"
+                android:background="#36CECECE"
+                android:padding="10sp"
+                android:layout_below="@id/et_user_number"
+                android:clickable="false"
+                android:layout_marginBottom="10dp"/>
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/iv_user_email_edit"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="40dp"
+                android:src="@drawable/ic_edit_black_24dp"
+                android:background="#6D6666"
+                android:layout_below="@id/et_user_number"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/et_address_number"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="16sp"
+                android:text="address"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textColor="#6D6666"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="90dp"
+                android:background="#36CECECE"
+                android:padding="10sp"
+                android:layout_below="@id/et_user_email"
+                android:clickable="false"
+                android:layout_marginBottom="10dp"/>
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/iv_user_address_edit"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="40dp"
+                android:src="@drawable/ic_edit_black_24dp"
+                android:background="#6D6666"
+                android:layout_below="@id/et_user_email"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/et_user_dob"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="16sp"
+                android:text="date of birth"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textColor="#6D6666"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="90dp"
+                android:background="#36CECECE"
+                android:padding="10sp"
+                android:layout_below="@id/iv_user_address_edit"
+                android:clickable="false"
+                android:layout_marginBottom="10dp"/>
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/iv_user_dob_edit"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="40dp"
+                android:src="@drawable/ic_edit_black_24dp"
+                android:background="#6D6666"
+                android:layout_below="@id/iv_user_address_edit"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/et_user_passwords"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="16sp"
+                android:text="password"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textColor="#6D6666"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="90dp"
+                android:background="#36CECECE"
+                android:padding="10sp"
+                android:layout_below="@id/iv_user_dob_edit"
+                android:clickable="false"
+                android:layout_marginBottom="10dp"/>
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/iv_user_password_edit"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="40dp"
+                android:src="@drawable/ic_edit_black_24dp"
+                android:background="#6D6666"
+                android:layout_below="@id/iv_user_dob_edit"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LOGOUT"
+                android:textSize="16sp"
+                android:textColor="#ffffff"
+                android:background="#B61515"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_below="@+id/et_user_passwords"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

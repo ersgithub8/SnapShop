@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.EditorProfilePreview">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_editor_img"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/tv_editor_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_marginTop="5dp"
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="1"
+            android:layout_margin="5dp">
+
+            <Button
+                android:id="@+id/btn_Call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="CALL"
+                android:background="#8BC34A"/>
+            <Button
+                android:id="@+id/btn_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="SMS"
+                android:background="#FFC107"/>
+        </LinearLayout>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_editor_galary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.skydoves.elasticviews.ElasticCardView
+            android:id="@+id/card_address"
+            app:cardView_duration="200"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Address"
+                    android:textSize="18sp"
+                    android:textColor="#fff"
+                    android:background="@drawable/addbg1"
+                    android:padding="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="#000"
+                    android:background="@drawable/addbg2"
+                    android:padding="10dp"
+                    />
+            </LinearLayout>
+        </com.skydoves.elasticviews.ElasticCardView>
+
+
+        <LinearLayout
+            android:id="@+id/ratingll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+        <RatingBar
+            android:id="@+id/ratingbar_editor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:theme="@style/ratingbar"/>
+
+        <TextView
+            android:id="@+id/puss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Rating"
+            android:textColor="#000"
+            android:layout_gravity="center"/>
+        </LinearLayout>
+
+<TextView
+    android:id="@+id/price"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg2"
+            android:padding="2dp">
+
+            <EditText
+                android:id="@+id/cardno"
+                android:background="@drawable/bg1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:inputType="number"
+                android:drawablePadding="10dp"
+                android:hint="Card Number"
+                android:maxLength="16"
+                android:focusable="true"
+                android:textCursorDrawable="@drawable/cursor"
+                android:drawableLeft="@drawable/creditcard"
+                android:padding="10dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <EditText
+                    android:id="@+id/carddate"
+                    android:background="@drawable/bg3"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:maxLength="5"
+                    android:focusable="true"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:inputType="date"
+                    android:drawableLeft="@drawable/calendar"
+                    android:hint="MM/YY"
+                    android:drawablePadding="10dp"
+                    android:padding="10dp"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#000"/>
+                <EditText
+                    android:focusable="true"
+                    android:id="@+id/cardcvc"
+                    android:background="@drawable/bg4"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:maxLength="3"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:inputType="number"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:drawableLeft="@drawable/lock"
+                    android:hint="CVC"
+                    android:drawablePadding="10dp"
+                    android:padding="10dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <Button
+            android:id="@+id/confirmpayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bgbtn"
+            android:layout_margin="20dp"
+            android:text="Pay"
+            android:textSize="14sp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+</ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/editor_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:srcCompat="@drawable/ic_add_black_24dp"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="15dp"
+        android:backgroundTint="@color/colorPrimary"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

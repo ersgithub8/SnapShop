@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="0dp"
+        android:layout_margin="5dp"
+        >
+
+        <com.smarteist.autoimageslider.SliderView
+            android:id="@+id/imageSlider"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:sliderAnimationDuration="600"
+            app:sliderAutoCycleDirection="back_and_forth"
+            app:sliderAutoCycleEnabled="true"
+            app:sliderCircularHandlerEnabled="true"
+            app:sliderIndicatorAnimationDuration="600"
+            app:sliderIndicatorGravity="center_horizontal|bottom"
+            app:sliderIndicatorMargin="10dp"
+            app:sliderIndicatorOrientation="horizontal"
+            app:sliderIndicatorPadding="3dp"
+            app:sliderIndicatorRadius="1.5dp"
+            app:sliderIndicatorSelectedColor="#5A5A5A"
+            app:sliderIndicatorUnselectedColor="#FFF"
+            app:sliderScrollTimeInSec="1"
+            app:sliderStartAutoCycle="true" />
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4">
+        <ImageButton
+            android:id="@+id/ib_ps"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/photoshop"
+            android:scaleType="fitXY"
+            android:layout_weight="1"/>
+        <ImageButton
+            android:id="@+id/ib_ai"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/aftereffect"
+            android:scaleType="fitXY"
+            android:layout_weight="1"/>
+        <ImageButton
+            android:id="@+id/ib_ae"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/illustrator"
+            android:scaleType="fitXY"
+            android:layout_weight="1"/>
+        <ImageButton
+            android:id="@+id/ib_cd"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/coraldraw"
+            android:scaleType="fitXY"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_editor_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"/>
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ImagePreviewActivity"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark">
+
+    <Button
+        android:id="@+id/download"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Download"
+        android:background="#F11707"
+        android:layout_margin="5dp"/>
+
+    <ImageView
+        android:id="@+id/iv_pic_preview"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        tools:srcCompat="@tools:sample/avatars"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/btn_del_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DELETE"
+        android:background="#F11707"
+        android:layout_margin="5dp"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"/>
+</LinearLayout>
